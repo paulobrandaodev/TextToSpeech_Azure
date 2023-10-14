@@ -1,4 +1,4 @@
-const apiToken  = 'eyJhbGciOiJFUzI1NiIsImtpZCI6ImtleTEiLCJ0eXAiOiJKV1QifQ.eyJyZWdpb24iOiJicmF6aWxzb3V0aCIsInN1YnNjcmlwdGlvbi1pZCI6IjAxOGZiNWQyZWUwMjQ1ODc4ZDhjMDYwNmEzYTdhNmVjIiwicHJvZHVjdC1pZCI6IlNwZWVjaFNlcnZpY2VzLkYwIiwiY29nbml0aXZlLXNlcnZpY2VzLWVuZHBvaW50IjoiaHR0cHM6Ly9hcGkuY29nbml0aXZlLm1pY3Jvc29mdC5jb20vaW50ZXJuYWwvdjEuMC8iLCJhenVyZS1yZXNvdXJjZS1pZCI6Ii9zdWJzY3JpcHRpb25zLzI0ZTA5NDVlLTk2NmQtNDgwMy04YWNmLTBlMjZmOWFmMWUwMi9yZXNvdXJjZUdyb3Vwcy9DaGF0R1BUL3Byb3ZpZGVycy9NaWNyb3NvZnQuQ29nbml0aXZlU2VydmljZXMvYWNjb3VudHMvamFydmlzZW5haSIsInNjb3BlIjoic3BlZWNoc2VydmljZXMiLCJhdWQiOiJ1cm46bXMuc3BlZWNoc2VydmljZXMuYnJhemlsc291dGgiLCJleHAiOjE2OTczMjM4MjEsImlzcyI6InVybjptcy5jb2duaXRpdmVzZXJ2aWNlcyJ9.JDuMJVHPNEObD-aHO-IHjIzKkI49WcPZyL3MbhNMH74sBy0BFaz82693FazOAR-PVNDgGRVQwIBp4CEYpx3TSw'; // Substitua pela sua chave de API
+const apiToken  = 'TOKEN_DA_API'; // Substitua pelo seu token
 const endpoint  = 'https://brazilsouth.tts.speech.microsoft.com/cognitiveservices/v1';
 
 function textToSpeech() {
@@ -8,7 +8,7 @@ function textToSpeech() {
         method: 'POST',
         headers: {
             'Authorization': `Bearer ${apiToken}`,
-            'Ocp-Apim-Subscription-Key': '2e8eef00d83c4dbf83b3070aab58e047',
+            'Ocp-Apim-Subscription-Key': 'API_KEY',
             'Content-Type': 'application/ssml+xml',
             'X-Microsoft-OutputFormat': 'audio-16khz-128kbitrate-mono-mp3',
             'User-Agent': 'curl',
