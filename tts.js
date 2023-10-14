@@ -1,4 +1,3 @@
-const apiToken  = 'TOKEN_DA_API'; // Substitua pelo seu token
 const endpoint  = 'https://brazilsouth.tts.speech.microsoft.com/cognitiveservices/v1';
 
 function textToSpeech() {
@@ -7,7 +6,6 @@ function textToSpeech() {
     const requestOptions = {
         method: 'POST',
         headers: {
-            'Authorization': `Bearer ${apiToken}`,
             'Ocp-Apim-Subscription-Key': 'API_KEY',
             'Content-Type': 'application/ssml+xml',
             'X-Microsoft-OutputFormat': 'audio-16khz-128kbitrate-mono-mp3',
